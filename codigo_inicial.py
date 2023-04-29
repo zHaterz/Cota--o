@@ -1,7 +1,6 @@
 import requests
 from tkinter import *
 
-cota = []
 
 def pegar_cotacoes():
     requisicao = requests.get("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL")
@@ -20,7 +19,7 @@ def pegar_cotacoes():
     texto_cotacoes["text"] = texto
 
 
-janela = Tk()
+janela = Tk() #inico da Janela
 
 janela.title('Cotação Atual da Moedas') #Muda o titulo da janela!
 
